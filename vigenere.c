@@ -29,14 +29,24 @@ int main(int argc, string argv[])
     {
         if(key[j]==' ')
             j=0;
-        if(ptext[i]>=65 && ptext[i]<=90)
+        if(ptext[i]>=65 && ptext[i]<=90 && key[j]>=65 && key[j]<=90)
         {
             ptext[i] = (((ptext[i] - 65) + (key[j] - 65)) % 26) + 65;
             j++;
         }
-        else if(ptext[i]>=97 && ptext[i]<=122)
+        else if(ptext[i]>=65 && ptext[i]<=90 && key[j]>=97 && key[j]<=122)
+        {
+            ptext[i] = (((ptext[i] - 65) + (key[j] - 97)) % 26) + 65;
+            j++;
+        }
+        else if(ptext[i]>=97 && ptext[i]<=122 && key[j]>=97 && key[j]<=122)
         {
             ptext[i] = (((ptext[i] - 97) + (key[j] - 97)) % 26) + 97;
+            j++;
+        }
+        else if(ptext[i]>=97 && ptext[i]<=122 && key[j]>=65 && key[j]<=90)
+        {
+            ptext[i] = (((ptext[i] - 97) + (key[j] - 65)) % 26) + 97;
             j++;
         }
     }
