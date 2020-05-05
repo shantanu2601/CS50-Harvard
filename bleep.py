@@ -21,7 +21,7 @@ def main():
             msg_censor += word + " "
     
     print(msg_censor.strip())
-
+#example 1
 
 if __name__ == "__main__":
     main()
