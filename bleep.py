@@ -3,7 +3,7 @@ from sys import argv
 
 ban = set()
 
-
+#example
 def main():
     if(len(argv) != 2):
         print("Usage: python bleep.py dictionary")
