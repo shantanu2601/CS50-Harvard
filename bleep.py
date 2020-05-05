@@ -22,6 +22,7 @@ def main():
     
     print(msg_censor.strip())
 #example 1
+#example 2
 
 if __name__ == "__main__":
     main()
